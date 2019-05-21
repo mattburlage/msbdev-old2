@@ -59,8 +59,6 @@
                             </button>
                         </div>
                     </form>
-
-
                 </div>
             </div>
         </div>
@@ -76,7 +74,7 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    </span>
+                </span>
         </div>
     </div>
 </header>
@@ -104,17 +102,17 @@
             <h4 class="jumbotron-heading">{{ textcopy.principlestitle|safe }}</h4>
             <ul class="list-unstyled">
                 <li>
-                    {{ textcopy.PrinciplesEaseofUse|safe }}
+                    {{ textcopy.principleone|safe }}
                 </li>
             </ul>
             <ul class="list-unstyled">
                 <li>
-                    {{ textcopy.PrinciplesChange|safe }}
+                    {{ textcopy.principletwo|safe }}
                 </li>
             </ul>
             <ul class="list-unstyled">
                 <li>
-                    {{ textcopy.PrinciplesCode|safe }}
+                    {{ textcopy.principlethree|safe }}
                 </li>
             </ul>
         </div>
@@ -143,15 +141,15 @@
     }
 
     {% if formsent %}
-    // If we're passed the formsent variable,
-    // display success message for below time then fade out
-    const seconds = {{ textcopy.formmsgsec|safe }};
+        // If we're passed the formsent variable,
+        // display success message for below time then fade out
+        const seconds = {{ textcopy.formmsgsec|safe }};
 
-    document.addEventListener('DOMContentLoaded', () => {
-        setInterval(() => {
-            $('#msgnotify').fadeOut('slow');
-        }, seconds * 1000)
-    });
+        document.addEventListener('DOMContentLoaded', () => {
+            setInterval(() => {
+                $('#msgnotify').fadeOut('slow');
+            }, seconds * 1000)
+        });
     {% endif %}
 
 </script>

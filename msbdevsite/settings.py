@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '192.168.86.103',
+    'msb.dev',
+    'www.msb.dev',
 ]
 
 

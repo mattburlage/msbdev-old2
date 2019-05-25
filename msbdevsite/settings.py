@@ -26,7 +26,8 @@ SECRET_KEY = 'f=*-hky26$i)ye6(^9!_#xiwxb*lw#2_$ivk&r0+*i&bm+$-am'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '192.168.86.103',
+    '192.168.86.109',
+    'msbdevwebserver'
     'msb.dev',
     'www.msb.dev',
 ]
